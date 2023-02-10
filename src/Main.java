@@ -2,14 +2,14 @@ public class Main {
     public static void main(String[] args) {
 
 
-        method("усонкмв", "uson1999", "uson1999");
+        method("usonkmv0@gmail.com", "uson1999", "uson1999");
 
 
     }
 
     public static void method(String login, String password, String confirmPassword) {
         boolean onlyLatinAlphabet = login.matches("^[a-zA-Z0-9]+$");
-        if (!onlyLatinAlphabet) {
+        if (onlyLatinAlphabet) {
             throw new WrongAlphabetExsepsion(" Логинди Латинский алфавит мн жазуу керек");
         }
         if (login.length() > 20) {
